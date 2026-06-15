@@ -14,17 +14,18 @@
     <nav
         class="flex flex-row justify-between items-center bg-[#2F3334] text-white px-4 md:px-8 py-7 w-full max-md-w cursor-pointer">
         <div class="flex flex-row space-x-2 md:space-x-10">
-            <img src="../images/logo.png" alt="logo" class="w-25 md:w-32">
+            <img src="../images/logo.png" alt="logo" class="hidden md:block w-25 md:w-32">
+            <img src="../images/logo_mobile.png" alt="logo" class="block md:hidden w-7">
             <ul class="flex flex-row gap-3 md:gap-20 text-sm md:text-xl font-lato items-center">
                 <li>Series</li>
                 <li>Film</li>
                 <li>Daftar Saya</li>
             </ul>
         </div>
-        <div class="flex flex-row space-x-0 md:space-x-4">
+        <div class="flex flex-row space-x-2 md:space-x-0">
             <img src="../images/provil.png" alt="profile" class=" w-7 md:w-12 rounded-full md:rounded-2xl">
-            <select name="" id="" class="bg-[#2F3334] w-4  px-3 md:px-4 cursor-pointer">
-                <option value="px-0 w-0"></option>
+            <select name="" id="" class="bg-[#2F3334] w-1 px-3 md:px-4 cursor-pointer">
+                <option value=""></option>
                 <option value="" class="font-lato">Profile saya</option>
                 <option value="" class="font-lato">Ubah Premium</option>
                 <option value="" class="font-lato">Keluar</option>
@@ -33,12 +34,14 @@
     </nav>
 
     <!-- header -->
-    <header class="relative bg-[url('../../images/header.png')] bg-cover bg-center min-h-190">
-        <div class="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent" />
-        <div class="relative flex flex-col z-10 text-white px-10 w-full min-h-208 justify-center space-y-5">
-            <div class="space-y-6 w-167">
-                <h1 class="text-xl md:text-5xl font-lato">Duty After School</h1>
-                <p class="text-md md:text-lg font-lato">Sebuah benda tak dikenal mengambil alih dunia. Dalam
+    <header
+        class="relative bg-[url('../../images/header.png')] bg-repeat md:bg-cover md:bg-center h-100 md:min-h-[760px] flex items-end md:items-center">
+        <div class="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent"></div>
+        <div class="relative flex flex-col z-10 text-white px-2 md:px-10 w-full pb-6 md:pb-0 space-y-5">
+            <div class="space-y-4 md:space-y-6 px-10 w-full md:max-w-2xl">
+                <h1 class="text-2xl md:text-5xl font-lato">Duty After School</h1>
+                <p class="text-md  md:text-lg font-lato line-clamp-3 md:line-clamp-none">Sebuah benda tak dikenal
+                    mengambil alih dunia. Dalam
                     keputusasaan,
                     Departemen
                     Pertahanan
@@ -47,17 +50,21 @@
                     lebih banyak tentara, termasuk siswa sekolah menengah. Mereka pun segera menjadi pejuang garis depan
                     dalam perang.</p>
             </div>
-            <div class="relative flex flex-col justify-end">
-                <div class="flex flex-row space-x-5 justify-between">
-                    <div class="space-x-6">
-                        <button class="bg-blue-800 text-white px-5 py-3 w-20 rounded-2xl font-lato">Mulai</button>
-                        <button class="bg-[#3D4142]/70 w-39 py-4 rounded-[10px] font-lato">Selengkapnya</button>
-                        <button class="border-2 border-gray-500 rounded-3xl p-3 text-xl font-lato">18+</button>
+            <div class="relative flex flex-col justify-end px-4 md:px-10">
+                <div class="flex flex-row md:gap-3 items-center justify-between ">
+                    <div class="flex flex-row space-x-1.5 md:space-x-6">
+                        <button
+                            class="bg-blue-800 text-white px-1 py-2 md:px-5 md:py-3 w-20 rounded-2xl font-lato">Mulai</button>
+                        <div class="flex flex-row bg-[#3D4142]/70 px-2 py-2 md:px-6 md:py-3 rounded-xl font-lato">
+                            <img src="../images/warning.svg" alt="foto_warning" class="w-5">
+                            <span>Selengkapnnya</span>
+                        </div>
+                        <button class="border-2 border-gray-500 rounded-full md:rounded-3xl px-1 py-1 md:px-2.5 md:py-2.5
+                        text-xl font-lato">18+</button>
                     </div>
-                    <button class="border-2 border-gray-500 rounded-full px-4 cursor-pointer">
-                        <span class="material-symbols-outlined">
-                            music_off
-                        </span>
+                    <button
+                        class="border-2 border-gray-500 rounded-full md:rounded-3xl px-1 py-1 md:px-2.5 md:py-2.5 text-xl font-lato cursor-pointer">
+                        <img src="../images/mucic.svg" alt="">
                     </button>
                 </div>
             </div>
@@ -65,15 +72,15 @@
     </header>
     <!-- end header -->
     <main class="relative">
-        <section class="relative py-10 px-20 space-y-10">
+        <section class="relative py-5 px-10 md:py-10 md:px-20 space-y-10">
             <h2 class="text-white text-xl md:text-2xl font-lato">Melanjutkan Tonton Film</h2>
             <button onclick="scrollContainer('scorll', -300)"
-                class="absolute left-16 bottom-32 px-2 py-2 rounded-full bg-blue-500 z-10 cursor-pointer"><img
+                class="hidden md:block absolute left-16 bottom-32 px-2 py-2 rounded-full bg-blue-500 z-10 cursor-pointer"><img
                     src="../images/arrow-left.png" alt="left" /></button>
-            <div id="scorll" class="flex gap-7 overflow-x-hidden scorll transition overflow-y-hidden">
+            <div id="scorll" class="flex gap-7 overflow-x-auto scorll transition overflow-y-hidden">
                 <div class="shrink-0">
                     <img src="../images/avatar.png" alt="avatar"
-                        class="w-100 h-60 rounded-2xl bg-cover bg-repeat bg-center">
+                        class="w-70 md:w-100 md:h-60 rounded-2xl bg-cover bg-repeat bg-center">
                     <div class="flex flex-row justify-between -mt-10 px-3 text-white bg-blue-200">
                         <span class="font-lato">Don’t Look Up</span>
                         <span class="font-lato">4.5/5</span>
@@ -81,10 +88,10 @@
                 </div>
                 <div class="relative shrink-0">
                     <span
-                        class="absolute text-white bg-[#0F1E93] px-2 py-2 left-2.5 top-6 w-36 rounded-[20px] cursor-pointer font-bold font-lato text-center">Episode
+                        class="absolute text-white bg-[#0F1E93] px-1 rounded-[10px] py-1 md:px-2 md:py-2 left-2.5 top-6 md:w-36 md:rounded-[20px] cursor-pointer font-bold font-lato text-center text-sm md:text-md">Episode
                         Baru</span>
                     <img src="../images/blue.png" alt="avatar"
-                        class="w-100 h-60 rounded-2xl bg-cover bg-repeat bg-center">
+                        class="w-70 md:w-100 md:h-60 rounded-2xl bg-cover bg-repeat bg-center">
                     <div class="flex flex-row justify-between -mt-10 px-3 text-white bg-blue-200">
                         <span class="font-lato">Don’t Look Up</span>
                         <span class="font-lato">4.5/5</span>
@@ -92,7 +99,7 @@
                 </div>
                 <div class="shrink-0">
                     <img src="../images/shaxam.png" alt="avatar"
-                        class="w-100 h-60 rounded-2xl bg-cover bg-repeat bg-center">
+                        class="w-70 md:w-100 md:h-60 rounded-2xl bg-cover bg-repeat bg-center">
                     <div class="flex flex-row justify-between -mt-10 px-3  text-white bg-blue-200">
                         <span class="font-lato">Don’t Look Up</span>
                         <span class="font-lato">4.5/5</span>
@@ -100,7 +107,7 @@
                 </div>
                 <div class="shrink-0">
                     <img src="../images/korea.png" alt="avatar"
-                        class="w-100 h-60 rounded-2xl bg-cover bg-repeat bg-center">
+                        class="w-70 md:w-100 md:h-60 rounded-2xl bg-cover bg-repeat bg-center">
                     <div class="flex flex-row justify-between -mt-10 px-3 text-white bg-blue-200">
                         <span class="font-lato">Don’t Look Up</span>
                         <span class="font-lato">4.5/5</span>
@@ -108,7 +115,7 @@
                 </div>
                 <div class="shrink-0">
                     <img src="../images/mermaid.png" alt="avatar"
-                        class="w-100 h-60 rounded-2xl bg-cover bg-repeat bg-center">
+                        class="w-70 md:w-100 md:h-60 rounded-2xl bg-cover bg-repeat bg-center">
                     <div class="flex flex-row justify-between -mt-10 px-3 text-white bg-blue-200">
                         <span class="font-lato">Don’t Look Up</span>
                         <span class="font-lato">4.5/5</span>
@@ -116,148 +123,148 @@
                 </div>
             </div>
             <button onclick="scrollContainer('scorll', 300)"
-                class="absolute right-16 bottom-36 px-2 py-2 rounded-full bg-blue-500 -translate-y-1/2"><img
+                class="hidden md:block absolute right-16 bottom-36 px-2 py-2 rounded-full bg-blue-500 -translate-y-1/2"><img
                     src="../images/arrow-right.png" alt="right"></button>
         </section>
-        <section class="relative py-10 px-20 space-y-10">
+        <section class="relative py-1 px-10 md:py-10 md:px-20 space-y-10">
             <h1 class="text-white text-xl md:text-2xl">Top Rating Film dan Series Hari ini</h1>
             <button onclick="scrollContainer('scorlRating',-300)"
-                class="absolute left-12 bottom-64 px-2 py-2 rounded-full bg-blue-500 z-10"><img
+                class="hidden md:block absolute left-12 bottom-64 px-2 py-2 rounded-full bg-blue-500 z-10"><img
                     src="../images/arrow-left.png" alt="left"></button>
             <div id="scorlRating" class="flex gap-7 overflow-x-auto overflow-y-hidden">
                 <div class="relative shrink-0 cursor-pointer transition duration-100 delay-100 hover:-translate-y-1.5">
                     <span
-                        class="absolute text-white bg-[#0F1E93] px-2 py-2 left-2.5 top-6 w-36 rounded-[20px] cursor-pointer font-bold font-lato text-center">Episode
+                        class="absolute text-white bg-[#0F1E93] px-1 rounded-[10px] py-1 md:px-2 md:py-2 left-2.5 top-6 md:w-36 md:rounded-[20px] cursor-pointer font-bold font-lato text-center text-sm md:text-md">Episode
                         Baru</span>
                     <img src="../images/suzume.png" alt="avatar"
-                        class="w-[310px] h-full bg-center bg-repeat bg-cover rounded-2xl">
+                        class="w-32 h-60 md:w-[310px] md:h-full bg-center bg-repeat bg-cover rounded-2xl">
                 </div>
                 <div class="shrink-0">
                     <img src="../images/dino.png" alt="avatar"
-                        class="w-[310px] h-full bg-center bg-repeat bg-cover rounded-2xl">
+                        class=" w-32 h-60 md:w-[310px] md:h-full bg-center bg-repeat bg-cover rounded-2xl">
                 </div>
                 <div class="shrink-0">
                     <img src="../images/sonic.png" alt="avatar"
-                        class="w-[310px] h-full bg-center bg-repeat bg-cover rounded-2xl">
+                        class="w-32 h-60 md:w-[310px] md:h-full bg-center bg-repeat bg-cover rounded-2xl">
                 </div>
                 <div class="relative shrink-0">
                     <span
-                        class="absolute text-white bg-[#0F1E93] px-2 py-2 left-2.5 top-6 w-36 rounded-[20px] cursor-pointer font-bold font-lato text-center">Episode
+                        class="absolute text-white bg-[#0F1E93] px-1 rounded-[10px] py-1 md:px-2 md:py-2 left-2.5 top-6 md:w-36 md:rounded-[20px] cursor-pointer font-bold font-lato text-center text-sm md:text-md">Episode
                         Baru</span>
                     <img src="../images/area.png" alt="avatar"
-                        class="w-[310px] h-full bg-center bg-repeat bg-cover rounded-2xl">
+                        class="w-32 h-60 md:w-[310px] md:h-full bg-center bg-repeat bg-cover rounded-2xl">
                 </div>
                 <div class="relative shrink-0">
                     <span
-                        class="absolute text-white py-2 px-2 w-12 bg-[#B71F1D] right-12 top-0 rounded-[5px] cursor-pointer font-bold font-lato text-center">Top
+                        class="absolute text-white py-0.1 px-1 md:py-2 md:px-2 w-12 bg-[#B71F1D] right-1 md:right-12 top-0 rounded-[5px] cursor-pointer font-bold font-lato text-center">Top
                         10</span>
                     <img src="../images/hero.png" alt="avatar"
-                        class="w-[310px] h-full bg-center bg-repeat bg-cover rounded-2xl">
+                        class=" w-32 h-60 md:w-[310px] md:h-full bg-center bg-repeat bg-cover rounded-2xl">
                 </div>
             </div>
             <button onclick="scrollContainer('scorlRating',300)"
-                class="absolute right-20 bottom-72 px-2 py-2 rounded-full bg-blue-500 z-10"><img
+                class="hidden md:block absolute right-20 bottom-72 px-2 py-2 rounded-full bg-blue-500 z-10"><img
                     src="../images/arrow-right.png" alt="left"></button>
         </section>
 
-        <section class="relative py-10 px-20 space-y-10">
-            <h1 class="text-white text-md md:text-2xl font-lato">Film Trending</h1>
+        <section class="relative py-5 px-10 md:py-10 md:px-20 space-y-10">
+            <h1 class="text-white text-xl md:text-2xl font-lato">Film Trending</h1>
             <button onclick="scrollContainer('scrollFilm',-300)"
-                class="absolute left-12 bottom-64 px-2 py-2 rounded-full bg-blue-500 z-10"><img
+                class="hidden md:block absolute left-12 bottom-64 px-2 py-2 rounded-full bg-blue-500 z-10"><img
                     src="../images/arrow-left.png" alt="left"></button>
             <div id="scrollFilm" class="flex gap-7 overflow-x-auto overflow-y-hidden">
                 <div class="shrink-0 relative">
                     <span
-                        class="absolute text-white py-2 px-2 w-12 bg-[#B71F1D] right-4 top-0 rounded-bl-lg cursor-pointer font-bold font-lato text-center text-xl">Top
+                        class="absolute text-white py-0.1 px-1 md:py-2 md:px-2 w-8 md:w-12 bg-[#B71F1D] right-1 md:right-12 top-0 rounded-br-lg cursor-pointer font-bold font-lato text-center">Top
                         10</span>
                     <img src="../images/toworrow.png" alt="avatar"
-                        class="w-[310px] h-full bg-center bg-repeat bg-cover rounded-2xl">
+                        class="w-32 h-60 md:w-[310px] md:h-full bg-center bg-repeat bg-cover rounded-2xl">
                 </div>
                 <div class="shrink-0 relative">
                     <span
-                        class="absolute text-white py-2 px-2 w-12 bg-[#B71F1D] right-4 top-0 rounded-bl-lg cursor-pointer font-bold font-lato text-center text-xl">Top
+                        class="absolute text-white py-0.1 px-1 md:py-2 md:px-2 w-8 md:w-12 bg-[#B71F1D] right-1 md:right-12 top-0 rounded-br-lg cursor-pointer font-bold font-lato text-center">Top
                         10</span>
                     <img src="../images/hero_one.png" alt="avatar"
-                        class="w-[310px] h-full bg-center bg-repeat bg-cover rounded-2xl">
+                        class="w-32 h-60 md:w-[310px] md:h-full bg-center bg-repeat bg-cover rounded-2xl">
                 </div>
                 <div class="shrink-0 relative">
                     <span
-                        class="absolute text-white py-2 px-2 w-12 bg-[#B71F1D] right-4 top-0 rounded-bl-lg cursor-pointer font-bold font-lato text-center text-xl">Top
+                        class="absolute text-white py-0.1 px-1 md:py-2 md:px-2 w-8 md:w-12 bg-[#B71F1D] right-1 md:right-12 top-0 rounded-br-lg cursor-pointer font-bold font-lato text-center">Top
                         10</span>
                     <img src="../images/guardan.png" alt="avatar"
-                        class="w-[310px] h-full bg-center bg-repeat bg-cover rounded-2xl">
+                        class="w-32 h-60 md:w-[310px] md:h-full bg-center bg-repeat bg-cover rounded-2xl">
                 </div>
                 <div class="shrink-0 relative">
                     <span
-                        class="absolute text-white py-2 px-2 w-12 bg-[#B71F1D] right-4 top-0 rounded-bl-lg cursor-pointer font-bold font-lato text-center text-xl">Top
+                        class="absolute text-white py-0.1 px-1 md:py-2 md:px-2 w-8 md:w-12 bg-[#B71F1D] right-1 md:right-12 top-0 rounded-br-lg cursor-pointer font-bold font-lato text-center">Top
                         10</span>
                     <img src="../images/eropa.png" alt="avatar"
-                        class="w-[310px] h-full bg-center bg-repeat bg-cover rounded-2xl">
+                        class="w-32 h-60 md:w-[310px] md:h-full bg-center bg-repeat bg-cover rounded-2xl">
                 </div>
                 <div class="shrink-0 relative">
                     <span
-                        class="absolute text-white py-2 px-2 w-12 bg-[#B71F1D] right-4 top-0 rounded-bl-lg cursor-pointer font-bold font-lato text-center text-xl">Top
+                        class="absolute text-white py-0.1 px-1 md:py-2 md:px-2 w-8 md:w-12 bg-[#B71F1D] right-1 md:right-12 top-0 rounded-br-lg cursor-pointer font-bold font-lato text-center">Top
                         10</span>
                     <img src="../images/duyumg_one.png" alt="avatar"
-                        class="w-[310px] h-full bg-center bg-repeat bg-cover rounded-2xl">
+                        class="w-32 h-60 md:w-[310px] md:h-full bg-center bg-repeat bg-cover rounded-2xl">
                 </div>
             </div>
             <button onclick="scrollContainer('scrollFilm',-300)"
-                class="absolute right-20 bottom-72 px-2 py-2 rounded-full bg-blue-500 z-10"><img
+                class="hidden md:block  absolute right-20 bottom-72 px-2 py-2 rounded-full bg-blue-500 z-10"><img
                     src="../images/arrow-right.png" alt="left"></button>
         </section>
-
-        <section class="relative py-10 px-20 space-y-10">
-            <h1 class="text-white text-md md:text-2xl font-lato">Rilis Baru</h1>
+        <section class="relative py-5 px-10 md:py-10 md:px-20 space-y-10">
+            <h1 class="text-white text-xl md:text-2xl font-lato">Rilis Baru</h1>
             <button onclick="scrollContainer('rilis',-300)"
-                class="absolute left-12 bottom-64 px-2 py-2 rounded-full bg-blue-500 z-10"><img
+                class="hidden md:block absolute left-12 bottom-64 px-2 py-2 rounded-full bg-blue-500 z-10"><img
                     src="../images/arrow-left.png" alt="left"></button>
             <div id="rilis" class="flex gap-7 overflow-x-auto overflow-y-hidden">
                 <div class="shrink-0 relative">
                     <span
-                        class="absolute text-white py-2 px-2 w-12 bg-[#B71F1D] right-4 top-0 rounded-bl-lg cursor-pointer font-bold font-lato text-center text-xl">Top
+                        class="absolute text-white py-0.1 px-1 md:py-2 md:px-2 w-8 md:w-12 bg-[#B71F1D] right-1 md:right-12 top-0 rounded-br-lg cursor-pointer font-bold font-lato text-center">Top
                         10</span>
                     <img src="../images/duyumg_one.png" alt="avatar"
-                        class="w-[310px] h-full bg-center bg-repeat bg-cover rounded-2xl">
+                        class="w-32 h-60 md:w-[310px] md:h-full bg-center bg-repeat bg-cover rounded-2xl">
                 </div>
                 <div class="relative shrink-0">
                     <span
-                        class="absolute text-white bg-[#0F1E93] px-2 py-2 left-2.5 top-6 w-36 rounded-[20px] cursor-pointer font-bold font-lato text-center">Episode
+                        class="absolute text-white bg-[#0F1E93] px-1 rounded-[10px] py-1 md:px-2 md:py-2 left-2.5 top-6 md:w-36 md:rounded-[20px] cursor-pointer font-bold font-lato text-center text-sm md:text-md">Episode
                         Baru</span>
                     <img src="../images/duty.png" alt="avatar"
-                        class="w-[310px] h-full bg-center bg-repeat bg-cover rounded-2xl">
+                        class="w-32 h-60 md:w-[310px] md:h-full bg-center bg-repeat bg-cover rounded-2xl">
                 </div>
                 <div class="shrink-0 relative">
                     <span
-                        class="absolute text-white py-2 px-2 w-12 bg-[#B71F1D] right-4 top-0 rounded-bl-lg cursor-pointer font-bold font-lato text-center text-xl">Top
+                        class="absolute text-white py-0.1 px-1 md:py-2 md:px-2 w-8 md:w-12 bg-[#B71F1D] right-1.5 md:right-12 top-0 rounded-br-lg cursor-pointer font-bold font-lato text-center">Top
                         10</span>
                     <img src="../images/hero.png" alt="avatar"
-                        class="w-[310px] h-full bg-center bg-repeat bg-cover rounded-2xl">
+                        class="w-32 h-60 md:w-[310px] md:h-full bg-center bg-repeat bg-cover rounded-2xl">
                 </div>
                 <div class="relative shrink-0">
                     <span
-                        class="absolute text-white bg-[#0F1E93] px-2 py-2 left-2.5 top-6 w-36 rounded-[20px] cursor-pointer font-bold font-lato text-center">Episode
+                        class="absolute text-white bg-[#0F1E93] px-1 rounded-[10px] py-1 md:px-2 md:py-2 left-2.5 top-6 md:w-36 md:rounded-[20px] cursor-pointer font-bold font-lato text-center text-sm md:text-md">Episode
                         Baru</span>
                     <img src="../images/area.png" alt="avatar"
-                        class="w-[310px] h-full bg-center bg-repeat bg-cover rounded-2xl">
+                        class="w-32 h-60 md:w-[310px] md:h-full bg-center bg-repeat bg-cover rounded-2xl">
                 </div>
                 <div class="shrink-0 relative">
                     <img src="../images/missing.png" alt="avatar"
-                        class="w-[310px] h-full bg-center bg-repeat bg-cover rounded-2xl">
+                        class="w-32 h-60 md:w-[310px] md:h-full bg-center bg-repeat bg-cover rounded-2xl">
                 </div>
             </div>
             <button onclick="scrollContainer('rilis',300)"
-                class="absolute right-20 bottom-72 px-2 py-2 rounded-full bg-blue-500 z-10"><img
+                class=" hidden md:block absolute right-20 bottom-72 px-2 py-2 rounded-full bg-blue-500 z-10"><img
                     src="../images/arrow-right.png" alt="left"></button>
         </section>
     </main>
     <!-- Footer -->
-    <footer class="flex flex-row border border-t-gray-500 w-full px-10 py-10 justify-between">
+    <footer
+        class="flex flex-col md:flex-row border border-t-gray-500 w-full px-10 py-10 justify-between space-y-4 md:space-y-0">
         <div class="flex flex-col gap-4">
             <img src="../images/logo.png" alt="logoChild" class="w-[163px] h-[44px]">
             <p class="text-white font-lato">&copy;2026 Chill All Right Reserved</p>
         </div>
-        <div class="flex flex-row gap-7">
+        <div class="hidden md:flex flex-row gap-7">
             <div class="flex flex-col gap-1">
                 <h4 class="text-xl text-start font-lato text-[#C1C2C4]">Genre</h4>
                 <ul class="flex flex-col space-y-2 text-[#C1C2C4] font-bold font-lato cursor-pointer">
@@ -290,8 +297,7 @@
                 </ul>
             </div>
         </div>
-
-        <div class="flex flex-col gap-1">
+        <div class="hidden md:flex flex-col gap-1">
             <h4 class="text-xl font-lato text-white">Bantuan</h4>
             <ul class="flex flex-col space-y-2 text-[#C1C2C4] font-bold font-lato cursor-pointer">
                 <li>FAQ</li>
@@ -299,6 +305,15 @@
                 <li>Privasi</li>
                 <li>Syarat & Ketentuan</li>
             </ul>
+        </div>
+
+        <div class="flex flex-row md:hidden justify-between">
+            <h2 class="text-lg md:text-2xl font-lato text-[#C1C2C4]">Genre</h2>
+            <img src="../images/arrow_right.svg" alt="arrow_right" class="w-5">
+        </div>
+        <div class="flex flex-row md:hidden justify-between">
+            <h2 class="text-lg md:text-2xl font-lato text-[#C1C2C4]">Bantuan</h2>
+            <img src="../images/arrow_right.svg" alt="arrow_right" class="w-5">
         </div>
     </footer>
     <!-- End Footer -->
