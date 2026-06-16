@@ -24,12 +24,20 @@
         </div>
         <div class="flex flex-row space-x-2 md:space-x-0">
             <img src="../images/provil.png" alt="profile" class=" w-7 md:w-12 rounded-full md:rounded-2xl">
-            <select name="" id="" class="bg-[#2F3334] w-1 px-3 md:px-4 cursor-pointer">
-                <option value=""></option>
-                <option value="" class="font-lato">Profile saya</option>
-                <option value="" class="font-lato">Ubah Premium</option>
-                <option value="" class="font-lato">Keluar</option>
+            <select name="" id="" class="bg-[#2F3334] w-1 px-3 md:px-4">
+                <option value="" class="font-lato rounded-4xl">Profile saya</option>
+                <option value="" class="font-lato rounded-4xl">Ubah Premium</option>
+                <option id="logout" value="logout" class="font-lato cursor-pointer rounded-4xl">Keluar</option>
             </select>
+            <!-- <div class="hidden flex flex-row space-x-3">
+                <a href="./page/login.html">
+                    <button type="submit"
+                        class="bg-[#2F3334] border border-[#E7E3FC3B] w-28 px-4 py-2.5 rounded-md font-lato cursor-pointer transition duration-150 hover:bg-[#192DB7]">LOGIN</button>
+                </a>
+                <a href="./page/register.html"></a>
+                <button type="submit"
+                    class="bg-[#181A1C] border border-[#E7E3FC3B] w-28 px-4 py-2.5 rounded-md font-lato">Register</button>
+            </div> -->
         </div>
     </nav>
 
@@ -83,7 +91,10 @@
                         class="w-70 md:w-100 md:h-60 rounded-2xl bg-cover bg-repeat bg-center">
                     <div class="flex flex-row justify-between -mt-10 px-3 text-white bg-blue-200">
                         <span class="font-lato">Don’t Look Up</span>
-                        <span class="font-lato">4.5/5</span>
+                        <div class="flex flex-row ga-2 items-center">
+                            <img src="../images/bintang.svg" alt="bintang" class="w-6">
+                            <span class="font-lato text-md">4.5/5</span>
+                        </div>
                     </div>
                 </div>
                 <div class="relative shrink-0">
@@ -94,7 +105,10 @@
                         class="w-70 md:w-100 md:h-60 rounded-2xl bg-cover bg-repeat bg-center">
                     <div class="flex flex-row justify-between -mt-10 px-3 text-white bg-blue-200">
                         <span class="font-lato">Don’t Look Up</span>
-                        <span class="font-lato">4.5/5</span>
+                        <div class="flex flex-row ga-2 items-center">
+                            <img src="../images/bintang.svg" alt="bintang" class="w-6">
+                            <span class="font-lato text-md">4.5/5</span>
+                        </div>
                     </div>
                 </div>
                 <div class="shrink-0">
@@ -102,7 +116,10 @@
                         class="w-70 md:w-100 md:h-60 rounded-2xl bg-cover bg-repeat bg-center">
                     <div class="flex flex-row justify-between -mt-10 px-3  text-white bg-blue-200">
                         <span class="font-lato">Don’t Look Up</span>
-                        <span class="font-lato">4.5/5</span>
+                        <div class="flex flex-row ga-2 items-center">
+                            <img src="../images/bintang.svg" alt="bintang" class="w-6">
+                            <span class="font-lato text-md">4.5/5</span>
+                        </div>
                     </div>
                 </div>
                 <div class="shrink-0">
@@ -110,7 +127,10 @@
                         class="w-70 md:w-100 md:h-60 rounded-2xl bg-cover bg-repeat bg-center">
                     <div class="flex flex-row justify-between -mt-10 px-3 text-white bg-blue-200">
                         <span class="font-lato">Don’t Look Up</span>
-                        <span class="font-lato">4.5/5</span>
+                        <div class="flex flex-row ga-2 items-center">
+                            <img src="../images/bintang.svg" alt="bintang" class="w-6">
+                            <span class="font-lato text-md">4.5/5</span>
+                        </div>
                     </div>
                 </div>
                 <div class="shrink-0">
@@ -118,7 +138,10 @@
                         class="w-70 md:w-100 md:h-60 rounded-2xl bg-cover bg-repeat bg-center">
                     <div class="flex flex-row justify-between -mt-10 px-3 text-white bg-blue-200">
                         <span class="font-lato">Don’t Look Up</span>
-                        <span class="font-lato">4.5/5</span>
+                        <div class="flex flex-row ga-2 items-center">
+                            <img src="../images/bintang.svg" alt="bintang" class="w-6">
+                            <span class="font-lato text-md">4.5/5</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -173,7 +196,6 @@
                 class="hidden md:block absolute right-32 bottom-80 px-2 py-2 rounded-full bg-[#2F3334] z-10"><img
                     src="../images/arrow_rigt_one.svg" alt="left"></button>
         </section>
-
         <section class="relative py-5 px-10 md:py-10 md:px-20 space-y-10">
             <h1 class="text-white text-xl md:text-2xl font-lato">Film Trending</h1>
             <button onclick="scrollContainer('scrollFilm',-300)"
@@ -336,13 +358,21 @@
             </ul>
         </div>
 
-        <div class="flex flex-row md:hidden justify-between">
-            <h2 class="text-lg md:text-2xl font-lato text-[#C1C2C4]">Genre</h2>
-            <img src="../images/arrow_right.svg" alt="arrow_right" class="w-5">
+        <div class="flex flex-col md:hidden justify-between gap-1">
+            <div class="flex flex-row justify-between">
+                <h2 class="text-lg md:text-2xl font-lato font-bold text-white">Genre</h2>
+                <img src="../images/arrow_right.svg" id="button-arrowGenre" alt="arrow_right" class="w-5">
+            </div>
+            <ul id="listGenre" class="hidden space-y-2 text-[#C1C2C4] font-bold font-lato cursor-pointer">
+            </ul>
         </div>
-        <div class="flex flex-row md:hidden justify-between">
-            <h2 class="text-lg md:text-2xl font-lato text-[#C1C2C4]">Bantuan</h2>
-            <img src="../images/arrow_right.svg" alt="arrow_right" class="w-5">
+        <div class="flex flex-col md:hidden gap-1">
+            <div class="flex flex-row justify-between">
+                <h2 class="text-lg md:text-2xl font-lato font-bold text-white">Bantuan</h2>
+                <img src="../images/arrow_right.svg" id="button-arrow" alt="arrow_right" class="w-5">
+            </div>
+            <ul id="list" class="hidden space-y-2 text-[#C1C2C4] font-bold font-lato cursor-pointer">
+            </ul>
         </div>
     </footer>
     <!-- End Footer -->
