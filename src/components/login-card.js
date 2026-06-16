@@ -21,6 +21,7 @@ class LoginCard extends HTMLElement {
                 <label for="" class="text-white text-md  md:text-lg">Kata Sandi</label>
                 <input type="password" name="password" id="password" placeholder="Masukan Kata Sandi"
                     class="w-full rounded-2xl border-2 border-white px-3 py-2 text-white">
+                    <span class="absolute text-white right-6 cursor-pointer md:right-28 md:bottom-[216px] bottom-[200px]"><i id="toggler"class="far fa-eye"></i></span>
                 <!-- deskripsi -->
                 <div class="flex flex-row justify-between gap-4">
                     <p class="text-gray-400 text-sm md:text-md">${deskripsiText} <a href="../page/register.html" class="text-white text-sm md:text-md">${link}</a></p>

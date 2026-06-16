@@ -210,11 +210,23 @@
   .top-6 {
     top: calc(var(--spacing) * 6);
   }
+  .right-0 {
+    right: 0;
+  }
   .right-1 {
     right: var(--spacing);
   }
   .right-1\.5 {
     right: calc(var(--spacing) * 1.5);
+  }
+  .right-5 {
+    right: calc(var(--spacing) * 5);
+  }
+  .right-6 {
+    right: calc(var(--spacing) * 6);
+  }
+  .right-10 {
+    right: calc(var(--spacing) * 10);
   }
   .right-16 {
     right: calc(var(--spacing) * 16);
@@ -222,17 +234,77 @@
   .right-32 {
     right: calc(var(--spacing) * 32);
   }
+  .right-100 {
+    right: calc(var(--spacing) * 100);
+  }
+  .bottom-2 {
+    bottom: calc(var(--spacing) * 2);
+  }
+  .bottom-2\.5 {
+    bottom: calc(var(--spacing) * 2.5);
+  }
+  .bottom-5 {
+    bottom: calc(var(--spacing) * 5);
+  }
+  .bottom-10 {
+    bottom: calc(var(--spacing) * 10);
+  }
   .bottom-32 {
     bottom: calc(var(--spacing) * 32);
   }
   .bottom-36 {
     bottom: calc(var(--spacing) * 36);
   }
+  .bottom-40 {
+    bottom: calc(var(--spacing) * 40);
+  }
+  .bottom-52 {
+    bottom: calc(var(--spacing) * 52);
+  }
+  .bottom-56 {
+    bottom: calc(var(--spacing) * 56);
+  }
+  .bottom-60 {
+    bottom: calc(var(--spacing) * 60);
+  }
   .bottom-64 {
     bottom: calc(var(--spacing) * 64);
   }
   .bottom-80 {
     bottom: calc(var(--spacing) * 80);
+  }
+  .bottom-\[1rem\] {
+    bottom: 1rem;
+  }
+  .bottom-\[2px\] {
+    bottom: 2px;
+  }
+  .bottom-\[2rem\] {
+    bottom: 2rem;
+  }
+  .bottom-\[20px\] {
+    bottom: 20px;
+  }
+  .bottom-\[100px\] {
+    bottom: 100px;
+  }
+  .bottom-\[150px\] {
+    bottom: 150px;
+  }
+  .bottom-\[200px\] {
+    bottom: 200px;
+  }
+  .bottom-\[210px\] {
+    bottom: 210px;
+  }
+  .bottom-\[220px\] {
+    bottom: 220px;
+  }
+  .bottom-\[225px\] {
+    bottom: 225px;
+  }
+  .left-0 {
+    left: 0;
   }
   .left-2 {
     left: calc(var(--spacing) * 2);
@@ -815,6 +887,126 @@
   .md\:right-12 {
     @media (width >= 48rem) {
       right: calc(var(--spacing) * 12);
+    }
+  }
+  .md\:right-28 {
+    @media (width >= 48rem) {
+      right: calc(var(--spacing) * 28);
+    }
+  }
+  .md\:bottom-4 {
+    @media (width >= 48rem) {
+      bottom: calc(var(--spacing) * 4);
+    }
+  }
+  .md\:bottom-6 {
+    @media (width >= 48rem) {
+      bottom: calc(var(--spacing) * 6);
+    }
+  }
+  .md\:bottom-40 {
+    @media (width >= 48rem) {
+      bottom: calc(var(--spacing) * 40);
+    }
+  }
+  .md\:bottom-48 {
+    @media (width >= 48rem) {
+      bottom: calc(var(--spacing) * 48);
+    }
+  }
+  .md\:bottom-52 {
+    @media (width >= 48rem) {
+      bottom: calc(var(--spacing) * 52);
+    }
+  }
+  .md\:bottom-56 {
+    @media (width >= 48rem) {
+      bottom: calc(var(--spacing) * 56);
+    }
+  }
+  .md\:bottom-60 {
+    @media (width >= 48rem) {
+      bottom: calc(var(--spacing) * 60);
+    }
+  }
+  .md\:bottom-\[1rem\] {
+    @media (width >= 48rem) {
+      bottom: 1rem;
+    }
+  }
+  .md\:bottom-\[2px\] {
+    @media (width >= 48rem) {
+      bottom: 2px;
+    }
+  }
+  .md\:bottom-\[2rem\] {
+    @media (width >= 48rem) {
+      bottom: 2rem;
+    }
+  }
+  .md\:bottom-\[20px\] {
+    @media (width >= 48rem) {
+      bottom: 20px;
+    }
+  }
+  .md\:bottom-\[100px\] {
+    @media (width >= 48rem) {
+      bottom: 100px;
+    }
+  }
+  .md\:bottom-\[110px\] {
+    @media (width >= 48rem) {
+      bottom: 110px;
+    }
+  }
+  .md\:bottom-\[150px\] {
+    @media (width >= 48rem) {
+      bottom: 150px;
+    }
+  }
+  .md\:bottom-\[190px\] {
+    @media (width >= 48rem) {
+      bottom: 190px;
+    }
+  }
+  .md\:bottom-\[200px\] {
+    @media (width >= 48rem) {
+      bottom: 200px;
+    }
+  }
+  .md\:bottom-\[210px\] {
+    @media (width >= 48rem) {
+      bottom: 210px;
+    }
+  }
+  .md\:bottom-\[215px\] {
+    @media (width >= 48rem) {
+      bottom: 215px;
+    }
+  }
+  .md\:bottom-\[216px\] {
+    @media (width >= 48rem) {
+      bottom: 216px;
+    }
+  }
+  .md\:bottom-\[225px\] {
+    @media (width >= 48rem) {
+      bottom: 225px;
+    }
+  }
+  .md\:bottom-\[250px\] {
+    @media (width >= 48rem) {
+      bottom: 250px;
+    }
+  }
+  .md\:bottom-\[300px\] {
+    @media (width >= 48rem) {
+      bottom: 300px;
+    }
+  }
+  .md\:bottom-\[600px\] {
+    @media (width >= 48rem) {
+      bottom: 600px;
     }
   }
   .md\:line-clamp-none {
